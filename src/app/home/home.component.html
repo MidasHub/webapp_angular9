@@ -4,12 +4,12 @@
     class="fluidcontainer m-b-10 p-10" fxFlex="100"  tourAnchor="id5">
 
     <!-- banner default  -->
-    <div  fxLayout="column" *ngIf="!this.showBanner|| !this.isDesktop">
+    <!-- <div  fxLayout="column" *ngIf="!this.showBanner|| !this.isDesktop"> -->
       <!-- <button mat-raised-button color="primary" [routerLink]="['/dashboard']">
         <fa-icon icon="tachometer-alt"></fa-icon>&nbsp;&nbsp;
         {{'Home_Component.btnDashboard'| translate}}
       </button> -->
-      <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="start start" fxLayoutGap="1%" class=" p-l-20"  >
+      <!-- <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="start start" fxLayoutGap="1%" class=" p-l-20"  >
         <button mat-raised-button color="primary" [routerLink]="['/clients/create']" 
         [queryParams]="{go_back:'home'}" style="width:185px" 
        >
@@ -24,13 +24,13 @@
         </button>
       </div>
       <h1 class=" p-l-20">{{'Home_Component.welcome'| translate}} <strong>{{childBannerData.userName}}</strong>! </h1>
-    </div>
+    </div> -->
     
 
     <!-- Banner dành riêng cho đơn vị theo yêu cầu không hiện ở màn hình điện thoại -->
     <midas-customerbanner 
       [childBannerData]="this.childBannerData"  
-      *ngIf="this.showBanner && this.isDesktop" 
+      *ngIf="this.isDesktop" 
       style="padding: 0px;width:100%" 
       
       ></midas-customerbanner>
