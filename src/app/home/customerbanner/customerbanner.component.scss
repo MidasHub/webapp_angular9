@@ -14,6 +14,11 @@
     line-height: 1;
     color: #c6e2ff;
     animation: neon 0.08s ease-in-out infinite alternate;
+    .aa{
+      color: #c6e2ff;
+      text-shadow: 0 0 2px rgba(202, 228, 225, 0.92), 0 0 10px rgba(202, 228, 225, 0.34), 0 0 4px rgba(30, 132, 242, 0.52),
+        0 0 7px rgba(30, 132, 242, 0.92), 0 0 11px rgba(30, 132, 242, 0.78), 0 0 16px rgba(30, 132, 242, 0.92);
+    }
     li{
       font-size: 1rem;
       margin-top: 0.5rem;
@@ -37,7 +42,7 @@
 }
 
 .bannerbg {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.9), rgba(28, 0, 138, 0.5)), url(../../../assets/images/banner/2650401.jpg);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.9), rgba(28, 0, 138, 0.8)), url(../../../assets/images/banner/2650401.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
