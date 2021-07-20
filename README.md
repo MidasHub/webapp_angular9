@@ -134,3 +134,7 @@ To upgrade to Angular 10 do as following:
 ### Fix firebase SDK " export '__spreadArray' was not found in 'tslib' " error
   - To Fix typo error of Firebase lib. Use VScode find function to find string "__spreadArray" in "./node_module/@firebase" and replace by "__spreadArrays"
 
+### Set max RAM for ng serve if needed ##
+
+node --max_old_space_size=8192 node_modules/@angular/cli/bin/ng serve --prod  
+
